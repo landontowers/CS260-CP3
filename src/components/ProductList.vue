@@ -27,7 +27,7 @@
     },
     methods: {
       navigate(product) {
-        let link = "https://www.google.com/maps/dir/?api=1&" + product.AddressInfo.Latitude + "," + product.AddressInfo.Longitude;
+        let link = "https://www.google.com/maps/search/?api=1&query=" + product.AddressInfo.Latitude + "," + product.AddressInfo.Longitude;
         window.open(link);
       },
       getLocationTitle(loc){
